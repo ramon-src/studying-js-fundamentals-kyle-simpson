@@ -7,3 +7,7 @@ Everything I understood to be important I noted in the files below:
 - first
 - second
 - third
+
+## Exercises
+
+[Bank account and Phone Store](https://29ey2.codesandbox.io/src/practice/exercise.html)

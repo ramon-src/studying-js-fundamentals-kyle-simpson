@@ -58,12 +58,15 @@ function purchase(item) {
 
 function makeBalanceStatement() {
   let balanceText = "************ BALANCE STATEMENT *************\n";
+  let total = 0;
   purchasedItems.forEach(function(item) {
     balanceText += `${item.category} - ${item.name}: $${item.price.toFixed(
       2
     )} / tax ${item.tax.toFixed(2)} / total: ${moneyToPrint(item.total)}\n
     `;
+    total += item.total;
   });
+  balanceText += `Total: ${moneyToPrint(total)}`;
   return balanceText;
 }
 
